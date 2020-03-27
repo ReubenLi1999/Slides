@@ -1,0 +1,18 @@
+%\NeedsTeXFormat{LaTeX2e}
+%\ProvidesPackage{beamerthemeuconn}
+
+% Pass options to sub-themes
+\DeclareOptionBeamer{campus}{\PassOptionsToPackage{campus=#1}{beamerouterthemeuconn}}
+\DeclareOptionBeamer{watermark}{\PassOptionsToPackage{watermark=#1}{beamerouterthemeuconn}}
+\DeclareOptionBeamer{logo}{\PassOptionsToPackage{logo=#1}{beamerouterthemeuconn}}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+% Sub-themes
+\useinnertheme{uconn}
+\useoutertheme{uconn}
+\usecolortheme{uconn}
+\usefonttheme{uconn}
+
+\mode<all>

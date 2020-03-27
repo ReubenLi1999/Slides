@@ -1,0 +1,25 @@
+\BOOKMARK [2][]{Outline0.1}{CentraleSup\351lec Rennes \046 Inria Lille}{}% 1
+\BOOKMARK [3][]{Outline0.1.1.2}{Team : SCEE @ IETR \046 SequeL @ CRIStAL}{Outline0.1}% 2
+\BOOKMARK [2][]{Outline0.2}{0. Introduction and motivation}{}% 3
+\BOOKMARK [3][]{Outline0.2.1.2}{0.1. Title}{Outline0.2}% 4
+\BOOKMARK [3][]{Outline0.2.2.2}{0.2. Objective}{Outline0.2}% 5
+\BOOKMARK [3][]{Outline0.2.3.3}{0.3. Outline}{Outline0.2}% 6
+\BOOKMARK [2][]{Outline0.3}{1. Opportunistic Spectrum Access}{}% 7
+\BOOKMARK [3][]{Outline0.3.1.4}{1.1. OSA}{Outline0.3}% 8
+\BOOKMARK [3][]{Outline0.3.2.5}{1.2. Model}{Outline0.3}% 9
+\BOOKMARK [2][]{Outline0.4}{2. Multi-Armed Bandits}{}% 10
+\BOOKMARK [2][]{Outline0.5}{3. MAB algorithms}{}% 11
+\BOOKMARK [3][]{Outline0.5.1.8}{3.1. Index based algorithms}{Outline0.5}% 12
+\BOOKMARK [3][]{Outline0.5.2.9}{3.2. UCB algorithm }{Outline0.5}% 13
+\BOOKMARK [3][]{Outline0.5.3.10}{3.3. Thompson sampling algorithm }{Outline0.5}% 14
+\BOOKMARK [2][]{Outline0.6}{4. Aggregation of MAB algorithms}{}% 15
+\BOOKMARK [3][]{Outline0.6.1.12}{4.2. The Exp4 algorithm}{Outline0.6}% 16
+\BOOKMARK [3][]{Outline0.6.2.12}{Unbiased estimates?}{Outline0.6}% 17
+\BOOKMARK [3][]{Outline0.6.3.12}{4.3. Our Aggregator algorithm}{Outline0.6}% 18
+\BOOKMARK [2][]{Outline0.7}{5. Some illustrations}{}% 19
+\BOOKMARK [3][]{Outline0.7.1.13}{5.1. On a simple Bernoulli problem}{Outline0.7}% 20
+\BOOKMARK [3][]{Outline0.7.2.14}{5.2. On a "hard" Bernoulli problem}{Outline0.7}% 21
+\BOOKMARK [3][]{Outline0.7.3.15}{5.3. On a mixed problem}{Outline0.7}% 22
+\BOOKMARK [2][]{Outline0.8}{6. Conclusion}{}% 23
+\BOOKMARK [3][]{Outline0.8.1.16}{6.1. Summary}{Outline0.8}% 24
+\BOOKMARK [3][]{Outline0.8.2.17}{6.2. Summary \046 Thanks}{Outline0.8}% 25
