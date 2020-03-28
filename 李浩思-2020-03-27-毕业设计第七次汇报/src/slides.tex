@@ -73,6 +73,8 @@
 %% rectangles circles inmargin rounded
 % \useinnertheme{rounded}  % XXX My preference
 \useinnertheme{circles}    % XXX
+\usepackage{amsmath}
+\usepackage{setspace}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% outertheme
@@ -100,6 +102,7 @@
 \setbeamercolor{caption name}{fg=normal text.fg}
 \beamertemplatenavigationsymbolsempty
 \usepackage{lmodern}
+\usepackage{subfigure}
 \usepackage{color}
   \newcommand{\urlb}[1]{\textcolor{blue}{\url{#1}}}
 %% Color definition
@@ -116,7 +119,7 @@
 \definecolor{darkred}{RGB}{174,0,0}        % rgb(174,0,0)
 
 \usepackage{amssymb,amsmath}
-\usepackage{bbm,bm}  % bold maths symbols
+%\usepackage{bbm,bm}  % bold maths symbols
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 
@@ -161,8 +164,8 @@
 \fi
 \newif\ifbibliography
 \hypersetup{
-            pdftitle={Aggregation of MAB Learning Algorithms for OSA},
-            pdfauthor={  Christophe Moy Émilie Kaufmann},
+            pdftitle={The 7th Report},
+            pdfauthor={Hao-si Li},
             pdfborder={0 0 0},
             breaklinks=true}
 % \urlstyle{same}  % don't use monospace font for urls
@@ -209,12 +212,12 @@
 % https://tex.stackexchange.com/a/70495/
 \usepackage{appendixnumberbeamer}
 
-  \title{Aggregation of MAB Learning Algorithms for OSA}
-    \author[Lilian Besson]{\textbf{Lilian Besson} \newline \emph{Advised by} \and Christophe Moy
-\and Émilie Kaufmann}
-        \institute[CentraleSupélec \& Inria]{PhD Student \newline Team SCEE, IETR, CentraleSupélec, Rennes
-\newline \& Team SequeL, CRIStAL, Inria, Lille}
-        \date[IEEE WCNC - 16/04/18]{IEEE WCNC - 16th April 2018}
+  \title{The 7th Report of Graduation Design}
+    \author[Hao-si Li]{\textbf{Hao-si Li} \newline \emph{Advised by} \and Bao-liang Lu
+\and Zi-ren Luo}
+        \institute[CHD \& Taiji Programme]{Undergraduate Student \newline Chang'an Univeristy, Xi'an, Shaanxi, China
+\newline \& Taiji Programme, Beijing, China}
+        \date[Sichuan - 27/03/20]{Sichuan - 27th March 2020}
   
 % For \justifying command, see https://tex.stackexchange.com/a/148696/
 \usepackage{ragged2e}
@@ -241,108 +244,42 @@
 
 % XXX manual inclusion of logos
 \begin{center}
-\includegraphics[height=0.16\textheight]{../common/LogoIETR.png}
-\includegraphics[height=0.16\textheight]{../common/LogoCS.png}
-\includegraphics[height=0.16\textheight]{../common/LogoInria.jpg}
+\includegraphics[height=0.16\textheight]{../common/logo_chd.png}
+\includegraphics[height=0.16\textheight, width=0.6\linewidth]{../common/log_tiji.jpg}
+
 \end{center}
 
 \end{frame}
 
-\section*{\hfill{}CentraleSupélec Rennes \& Inria Lille\hfill{}}
 
-\subsection*{\hfill{}Team {:} SCEE @ IETR \& SequeL @ CRIStAL\hfill{}}
-
-
-
-
-\section{\hfill{}0. Introduction and motivation\hfill{}}
-
-\subsection{\hfill{}0.1. Title\hfill{}}
-
-\begin{block}{IEEE WCNC: \textbf{« Aggregation of Multi-Armed Bandits
-Learning Algorithms for Opportunistic Spectrum Access »}}
-
-\begin{itemize}
-\item
-  \emph{Date} : \(16\)th of April \(2018\)
-\item
-  \emph{Who:} \href{https://GitHub.com/Naereen/slides/}{Lilian Besson} ,
-  PhD Student in France, co-advised by
-\end{itemize}
-
-\begin{longtable}[c]{@{}cc@{}}
-\toprule
-\emph{Christophe Moy} @ CentraleSupélec \& IETR, Rennes & \emph{Émilie
-Kaufmann} @ Inria, Lille\tabularnewline
-\midrule
-\endhead
-\includegraphics{../common/LogoCS.png}
-\includegraphics{../common/LogoIETR.png} &
-\includegraphics{../common/LogoInria.jpg}\tabularnewline
-\bottomrule
-\end{longtable}
-
-\begin{quote}
-See our paper
-\href{https://hal.inria.fr/hal-01705292}{\texttt{HAL.Inria.fr/hal-01705292}}
-\end{quote}
-
-\end{block}
-
-\end{frame}
-
-
-
-\subsection{\hfill{}0.2. Objective\hfill{}}
-
-\end{frame}
-
-\begin{frame}{Introduction}
-
-\begin{itemize}
-\item
-  Cognitive Radio (CR) is known for being one of the possible solution
-  to tackle the spectrum scarcity issue
-\item
-  Opportunistic Spectrum Access (OSA) is a good model for CR problems in
-  \textbf{licensed bands}
-\item
-  Online learning strategies, mainly using multi-armed bandits (MAB)
-  algorithms, were recently proved to be efficient
-  \texttt{{[}Jouini\ 2010{]}}
-\item
-  But there is many different MAB algorithms\ldots{} which one should
-  you choose in practice?
-\end{itemize}
-
-\(\Longrightarrow\) we propose to use an online learning algorithm to
-also decide which algorithm to use, to be more robust and adaptive to
-unknown environments.
-
-\end{frame}
-
-
-
-\subsection{\hfill{}0.3. Outline\hfill{}}
-
-\end{frame}
+\subsection{\hfill{}0. Outline\hfill{}}
 
 \begin{frame}{Outline}
+\begin{block}{Work of last week}
+	\begin{enumerate}
+		\def\labelenumi{\arabic{enumi}.}
+		\tightlist
+		\item
+		Research on the laser frame for GRACE-FO 
+		\item
+		Organise GRACE-FO 1B data
+		\item
+		Finish KBR error propagation
+		\item
+		Finish laser frequency noise model
+		\item
+		Attitude angles $\dots$ on the way
+	\end{enumerate}
+\end{block}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Opportunistic Spectrum Access
-\item
-  Multi-Armed Bandits
-\item
-  MAB algorithms
-\item
-  Aggregation of MAB algorithms
-\item
-  Illustration
-\end{enumerate}
+\begin{block}{Arrangement of next week}
+	\begin{enumerate}
+		\def\labelnumi{\arabic{enumi}.}
+		\tightlist
+		\item Finish LRI error propagation
+		\item Revise all fortran programme into module-style
+	\end{enumerate}
+\end{block}
 
 \begin{block}{Please}
 
@@ -354,550 +291,391 @@ Ask questions \emph{at the end} if you want!
 
 
 
-\section{\hfill{}1. Opportunistic Spectrum Access\hfill{}}
+\section{\hfill{}1. Work of last week\hfill{}}
 
-\subsection{\hfill{}1.1. OSA\hfill{}}
-
-\end{frame}
-
-\begin{frame}{1. Opportunistic Spectrum Access}
-
-\begin{itemize}
-\tightlist
-\item
-  Spectrum scarcity is a well-known problem
-\item
-  Different range of solutions\ldots{}
-\item
-  Cognitive Radio is one of them
-\item
-  Opportunistic Spectrum Access is a kind of cognitive radio
-\end{itemize}
-
-\end{frame}
+\subsection{\hfill{}1.1. Research on the laser frame for GRACE-FO\hfill{}}
 
 
-
-\subsection{\hfill{}1.2. Model\hfill{}}
-
-\end{frame}
-
-\begin{frame}{Communication \& interaction model}
+\begin{frame}{Brief recap of last week}
+	
+	\begin{block}{Mentioned this $\dots$}
+		Better to review the presentation of last week! \\
+		Therefore, let's go back to those slide $\dots$
+	\end{block}
 
 \begin{itemize}
 \tightlist
 \item
-  Primary users are occupying \(K\) radio channels
+  The principle of two-way ranging
 \item
-  Secondary users can sense and exploit free channels: want to
-  \textbf{explore} the channels, and learn to \textbf{exploit} the best
-  one
-\item
-  Discrete time for everything \(t\geq1,t\in\mathbb{N}\)
+ The principle of phasemetre
 \end{itemize}
 
 \end{frame}
 
+\begin{frame}{The fundamentals of LRI of GRACE-FO}
+    OK, after the brief recap of last week, let's dive into the fundamentals of LRI ranging of GRACE-FO
 
-
-\section{\hfill{}2. Multi-Armed Bandits\hfill{}}
-
-\end{frame}
-
-\begin{frame}{2. Multi-Armed Bandits}
-
-\begin{block}{Model}
-
-\begin{itemize}
-\tightlist
-\item
-  Again \(K \geq 2\) resources (\emph{e.g.}, channels), called
-  \textbf{arms}
-\item
-  Each time slot \(t=1,\ldots,T\), you must choose one arm, denoted
-  \(A(t)\in\{1,\ldots,K\}\)
-\item
-  You receive some reward \(r(t) \sim \nu_k\) when playing \(k = A(t)\)
-\item
-  \textbf{Goal:} maximize your sum reward \(\sum\limits_{t=1}^{T} r(t)\)
-\item
-  Hypothesis: rewards are stochastic, of mean \(\mu_k\). \emph{E.g.},
-  Bernoulli
-\end{itemize}
-
-\end{block}
-
-\begin{block}{Why is it famous?}
-
-Simple but good model for \textbf{exploration/exploitation} dilemma.
-
-\end{block}
+    \begin{figure}
+		\includegraphics[height=0.7\textheight]{..//images//diagram_grace_fo.png}
+    \end{figure}
 
 \end{frame}
 
-
-
-\section{\hfill{}3. MAB algorithms\hfill{}}
-
+\begin{frame}{Key elements and TMA}
+	\begin{block}{Key words}
+		\textbf{off-axis, racetrack, three mirror assembly(TMA), Retro-reflector, vertex, transponder}
+	\end{block}
+	
+	\begin{block}{TMA, retro-reflector}
+		\begin{columns}
+			\column{4cm}
+			\begin{figure}
+				\includegraphics[height=0.5\textheight]{..//images//retroreflector.png}
+			\end{figure}
+			\column{8.5cm}
+			$\Longrightarrow$ \textbf{Assumptions:}
+			\begin{itemize}
+				\item Three mirrors perpendicular to one another.
+				\item Vertex of the retro-reflector is outside.
+				\item Pathlength is twice than the distance $\dots$
+				\item Two beams is \textbf{anti-parallel}.
+				\item Lateral offsets are the same.
+			\end{itemize}
+		\end{columns}
+	\end{block}
 \end{frame}
 
-\begin{frame}{3. MAB algorithms}
+\begin{frame}{Transponder}
+	\begin{block}{Why the transponder exists???}
+		Since the core of the two-ranging system is the transmitting satellite is the one to receive, why bother to arrange a slave transponder in the tracking satellite???
+	\end{block}
 
-\begin{itemize}
-\tightlist
-\item
-  Main idea: index \(I_k(t)\) to approximate the quality of each arm
-  \(k\)
-\item
-  First example: \emph{UCB algorithm}
-\item
-  Second example: \emph{Thompson Sampling}
-\end{itemize}
-
+	\begin{block}{Concerns}
+		According to the fourth assumption of the last slide, the transmitting beam is anti-parallel to the receiving one. But the separation of the two GRACE FO satellites is so large so that this assumption cannot be taken unless the attitude of the two satellites can be sufficiently controlled. Unfortunately, the test illustrates it is not gonna happen.
+	\end{block}
 \end{frame}
 
-
-
-\subsection{\hfill{}3.1.  Index based algorithms\hfill{}}
-
+\begin{frame}{Two-way ranging for GRACE-FO: Off-axis and racetrack}
+	\begin{block}{Alas! The laser axis has been \textbf{BLOCKED}!}
+		\begin{itemize}
+			\item Continuing the design style of the GRACE, the KBR phase centre and cold gas tank are placed right in the centre of the front of the satellite.
+			\item The shift offset cannot be too large in case that the error of attitude noise aligned into the range.
+		\end{itemize}
+		\begin{columns}
+			\column{6cm}
+			\begin{figure}
+				\includegraphics[height=3.3cm]{..//images//two_way_range_gracefo.png}
+			\end{figure}
+			\column{5cm}
+			\begin{scriptsize}
+				\begin{equation}
+				\begin{split}
+				\rho \left( t \right) \approx \frac{1}{2} [ x_1\left( t \right) +L_{12}\left( T \right) 
+				 +y_2\left( t \right)\\
+				  +L_{21}\left( t \right) 
+				  +x_2\left( t \right) +y_1\left( t \right) ] 
+				\end{split}
+				\end{equation}
+			\end{scriptsize}
+		\end{columns}
+		
+	\end{block}
 \end{frame}
 
-\begin{frame}{3.1 Multi-Armed Bandit algorithms}
+\begin{frame}{Noise sources}
+	\begin{block}{According to Sheard}
+		\begin{itemize}
+			\item \textbf{Two dominant sources:} pointing-induced noise, laser frequency noise
+			\item \textbf{Other sources:} USO, shot, laser power, photodetector noise $\dots$
+		\end{itemize}
+	\end{block}
 
-\begin{block}{Often \emph{index} based}
-
-\begin{itemize}
-\tightlist
-\item
-  Keep \emph{index} \(I_k(t) \in \mathbb{R}\) for each arm
-  \(k=1,\ldots,K\)
-\item
-  Always play \(A(t) = \arg\max I_k(t)\)
-\item
-  \(I_k(t)\) should represent our belief of the \emph{quality} of arm
-  \(k\) at time \(t\)
-\end{itemize}
-
-\end{block}
-
-\begin{block}{Example: ``Follow the Leader''}
-
-\begin{itemize}
-\tightlist
-\item
-  \(X_k(t) := \sum\limits_{s < t} r(s) \bold{1}(A(s)=k)\) sum reward
-  from arm \(k\)
-\item
-  \(N_k(t) := \sum\limits_{s < t} \bold{1}(A(s)=k)\) number of samples
-  of arm \(k\)
-\item
-  And use \(I_k(t) = \hat{\mu}_k(t) := \frac{X_k(t)}{N_k(t)}\).
-\end{itemize}
-
-\end{block}
-
+	\begin{block}{According to Vitali}
+		\begin{itemize}
+			\item laser frequency noise
+			\item triple mirror assembly pointing jitter coupling
+			\item additional linear and quadratic pointing jitter coupling
+		\end{itemize}
+	\end{block}
 \end{frame}
 
+\subsection{\hfill{}1.2. Organise GRACE-FO 1B data \hfill{}}
 
+\begin{frame}{"Technical job" $\dots$}
+	\begin{block}{Tools used}
+		Python package: dask, one parallel and efficient package to handle large dataframes.
+		
+		Python library, documents at
+		\href{https://SMPyBandits.GitHub.io}{\texttt{https://docs.dask.org/en/latest/}}
+	\end{block}
 
-\subsection{\hfill{}3.2. UCB algorithm \hfill{}}
-
+	\begin{block}{Results}
+		\textbf{Input} $\Longrightarrow$ the raw data of GRACE-FO 1B for Arbitrary days
+		
+		\textbf{Output} $\Longrightarrow$ the united dataframe for those days
+		
+		The same procedure as pre-processing Taiji-01
+	\end{block}
 \end{frame}
 
-\begin{frame}{3.2 First example of algorithm \emph{Upper Confidence
-Bounds} algorithm (UCB)}
+\subsection{\hfill{}1.3. KBR error propagation \hfill{}}
 
-\begin{itemize}
-\tightlist
-\item
-  Instead of using \(I_k(t) = \frac{X_k(t)}{N_k(t)}\), add an
-  exploration term
-  \[ I_k(t) = \frac{X_k(t)}{N_k(t)} + \sqrt{\frac{\alpha \log(t)}{2 N_k(t)}} \]
-\end{itemize}
-
-\begin{block}{Parameter \(\alpha\): tradeoff exploration \emph{vs}
-exploitation}
-
-\begin{itemize}
-\tightlist
-\item
-  Small \(\alpha\): focus more on \textbf{exploitation}
-\item
-  Large \(\alpha\): focus more on \textbf{exploration}
-\end{itemize}
-
-\end{block}
-
-\begin{block}{Problem: how to choose ``the good \(\alpha\)'' for a
-certain problem?}
-
-\end{block}
-
+\begin{frame}{KBR error propagation}
+	Good lord! Brought it off at last!!!
+	\begin{block}{The error propagation formula}
+		\begin{equation}
+			\sigma _{n}^{2}\left( \delta T \right) =\frac{1}{1-P_n\left( cos\theta \right)}\frac{R_e}{GM}\left( \frac{r}{R_e} \right) ^{2n+1}\sigma _{n}^{2}\left( \delta \dot{\rho} \right) 
+		\end{equation}
+	\end{block}
+	
+	\begin{block}{The noise sources of KBR ranging}
+		\begin{itemize}
+			\item USO frequency shift
+			\item System noise
+			\item Take the above two as a whole
+			\item Mutipath noise
+		\end{itemize}
+	\end{block}
 \end{frame}
 
-
-
-\subsection{\hfill{}3.3. Thompson sampling algorithm \hfill{}}
-
+\begin{frame}{Degree error}
+	Range-rate noise caused by USO frequency shift and system noise
+	
+	\begin{figure}
+		\includegraphics{..//images//kbr_os_sy.jpg}
+	\end{figure}
 \end{frame}
 
-\begin{frame}{3.3 Second example of algorithm \emph{Thompson sampling}
-(TS)}
-
-\begin{itemize}
-\tightlist
-\item
-  Choose an initial belief on \(\mu_k\) (uniform) and a prior \(p^t\)
-  (\emph{e.g.}, a Beta prior on \([0,1]\))
-\item
-  At each time, update the prior \(p^{t+1}\) from \(p^t\) using Bayes
-  theorem
-\item
-  And use \(I_k(t) \sim p^t\) as \emph{random} index
-\end{itemize}
-
-\begin{block}{Example with Beta prior, for binary rewards}
-
-\begin{itemize}
-\tightlist
-\item
-  \(p^t = \mathrm{Beta}(1 + \text{nb successes}, 1 + \text{nb failures})\).
-\item
-  Mean of \(p^t\)
-  \(= \frac{1 + X_k(t)}{2 + N_k(t)} \simeq \hat{\mu}_k(t)\).
-\end{itemize}
-
-\end{block}
-
-\begin{block}{How to choose ``the good prior'' for a certain problem?}
-
-\end{block}
-
+\begin{frame}{A small episode: Range}
+	Since the arbitrary-days-long data is available,  the multipath noise went into a different situation.
+	
+	\begin{figure}
+		\includegraphics[height=0.5\textheight]{..//images//multipath_range_time.png}
+		\caption{Range noise because of multipath noise (20190101-20190131)}
+	\end{figure}
 \end{frame}
 
-
-
-\section{\hfill{}4. Aggregation of MAB algorithms\hfill{}}
-
+\begin{frame}{A small episode: Range-rate}
+	\begin{figure}
+		\includegraphics{..//images//multipath_range_rate_time.png}
+		\caption{Range-rate noise because of multipath noise (20190101-20190131)}
+	\end{figure}
 \end{frame}
 
-\begin{frame}{4. Aggregation of MAB algorithms}
-
-\begin{block}{Problem}
-
-\begin{itemize}
-\tightlist
-\item
-  How to choose which algorithm to use?
-\item
-  But also\ldots{} Why commit to one only algorithm?
-\end{itemize}
-
-\end{block}
-
-\begin{block}{Solutions}
-
-\begin{itemize}
-\tightlist
-\item
-  Offline benchmarks?
-\item
-  Or online selections from a pool of algorithms?
-\end{itemize}
-
-\end{block}
-
-\begin{block}{\(\hookrightarrow\) Aggregation?}
-
-\begin{quote}
-Not a new idea, studied from the 90s in the ML community.
-\end{quote}
-
-\begin{itemize}
-\tightlist
-\item
-  Also use online learning to \emph{select the best algorithm}!
-\end{itemize}
-
-\end{block}
-
+\begin{frame}{A small episode: PSD}
+	\begin{figure}
+		\subfigure{
+		\begin{minipage}[t]{0.5\linewidth}
+			\centering
+			\includegraphics{..//images//psd_range_multipath_noise.jpg}
+		\end{minipage}%
+		}%
+		\subfigure{
+		\begin{minipage}[t]{0.5\linewidth}
+			\centering
+			\includegraphics{..//images//psd_range_rate_multipath_noise.jpg}
+		\end{minipage}%
+		}
+		\caption{PSD of multipath range and range-rate noise}
+	\end{figure}
 \end{frame}
 
-
-
-\begin{block}{4.1 Basic idea for online aggregation}
-
-If you have \(\mathcal{A}_1,\ldots,\mathcal{A}_N\) different algorithms
-
-\begin{itemize}
-\tightlist
-\item
-  At time \(t=0\), start with a uniform distribution \(\pi^0\) on
-  \(\{1,\ldots,N\}\) (to represent the \textbf{trust} in each algorithm)
-\item
-  At time \(t\), choose \(a^t \sim \pi^t\), then play with
-  \(\mathcal{A}_{a^t}\)
-\item
-  Compute next distribution \(\pi^{t+1}\) from \(\pi^t\):
-\item
-  increase \(\pi^{t+1}_{a^t}\) if choosing \(\mathcal{A}_{a^t}\) gave a
-  good reward
-\item
-  or decrease it otherwise
-\end{itemize}
-
-\end{block}
-
-\begin{block}{Problems}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  How to increase \(\pi^{t+1}_{a^t}\) ?
-\item
-  What information should we give to which algorithms?
-\end{enumerate}
-
-\end{block}
-
+\begin{frame}{Degree error}
+	Degree error because of multipath noise.
+	\begin{figure}
+		\includegraphics{..//images//kbr_multipath.jpg}
+	\end{figure}
 \end{frame}
 
+\begin{frame}{Degree error}
+	Total degree error of KBR ranging
+	
+	\begin{figure}
+		\includegraphics{..//images//kbr.jpg}
+	\end{figure}
 
-
-\subsection{\hfill{}4.2. The Exp4 algorithm\hfill{}}
-
-\begin{block}{4.2 Overview of the \emph{Exp4} aggregation algorithm}
-
-\begin{quote}
-For rewards in \(r(t) \in [-1,1]\).
-\end{quote}
-
-\begin{itemize}
-\tightlist
-\item
-  Use \(\pi^t\) to choose randomly the algorithm to trust,
-  \(a^t \sim \pi^t\)
-\item
-  Play its decision, \(A_{\text{aggr}}(t) = A_{a^t}(t)\), receive reward
-  \(r(t)\)
-\item
-  And give feedback of observed reward \(r(t)\) only to this one
-\item
-  Increase or decrease \(\pi^t_{a^t}\) using an exponential weight:
-  \[ \pi^{t+1}_{a^t} := \pi^{t}_{a^t} \times \exp\left(\eta_t \times \frac{r(t)}{\pi^t_{a^t}}\right).\]
-\item
-  Renormalize \(\pi^{t+1}\) to keep a distribution on \(\{1,\ldots,N\}\)
-\item
-  Use a sequence of decreasing \emph{learning rate}
-  \(\eta_t = \frac{\log(N)}{t \times K}\) (cooling scheme,
-  \(\eta_t \to 0\) for \(t\to\infty\))
-\end{itemize}
-
-\end{block}
-
+	The magnitude of the range-rate noise by USO frequency shift and system noise is much larger than the one caused by multipath noise.
 \end{frame}
 
+\subsection{\hfill{}1.4. Laser frequency noise model \hfill{}}
 
+\begin{frame}{Filter to generate noise}
+	\begin{block}{Formula $\Longrightarrow$ ASD}
+		According to the cavity test of JPL, the ASD of the range noise because of laser frequency noise is as follows:
+		
+		\begin{equation}
+			\bar{\delta}_{\rho LF}( f ) =5\times 10^{-9}\sqrt{1+\left( \frac{0.0182Hz}{f} \right) ^2}\frac{m}{\sqrt{Hz}}
+		\end{equation}
+	\end{block}
+	\begin{block}{Formula $\Longrightarrow$ Time series}
+		According to Sheard, the coupling of laser frequency noise into the range measurement is proportional to the satellite separation.
+		
+		\begin{equation}
+			\delta _{\rho LF}( t ) =\frac{\rho}{238}\times \mathcal{F}^{-1}( 5\times 10^{-9}\sqrt{1+( \frac{0.0182Hz}{f} ) ^2}\frac{m}{\sqrt{Hz}}) 
+		\end{equation}
+	\end{block}
+\end{frame}
 
-\subsection{\hfill{}Unbiased estimates?\hfill{}}
+\begin{frame}{PSD of range and range-rate noise}
+	\begin{equation}
+		\bar{\delta}_{\dot{\rho}LF}=2\pi f\bar{\delta}_{\rho LF}
+	\end{equation}
+	\begin{figure}
+		\includegraphics{..//images//laser_frequency_spectrum.png}
+	\end{figure}
+\end{frame}
 
-\begin{block}{Use an \emph{unbiased} estimate of the rewards}
+\begin{frame}{Time series of range rate}
+	Filtering approach as always $\dots$
+	\begin{figure}
+		\includegraphics{..//images//filtered_range_rate.png}
+	\end{figure}
+\end{frame}
 
-Using directly \(r(t)\) to update trust probability yields a biased
-estimator
+\subsection{\hfill{}1.5. Satellite's attitude in SRF \hfill{}}
+\begin{frame}{Another two noise for LRI}
+	\begin{block}{Triple mirror assembly poiting jitter coupling}
+		\begin{equation}
+			\delta \rho_{T M A_{A}}=-\left(e_{A B}^{I C R F}\right)^{T} \cdot \mathbf{R}_{S F}^{I C R F} \cdot \boldsymbol{v}_{A}^{S F}
+		\end{equation}
+	\end{block}
+	\begin{block}{Additional linear and quadratic pointing jitter coupling}
+		\begin{tiny}
+		\begin{equation}
+		 \delta \rho _{ALQ_A}=\left[ \begin{matrix}
+		 c_{x_A}&		c_{y_A}&		c_{z_A}\\
+		 \end{matrix} \right] \cdot \left[ \begin{array}{c}
+		 \theta _{x_A}\\
+		 \theta _{y_A}\\
+		 \theta _{z_A}\\
+		 \end{array} \right] +\left[ \begin{matrix}
+		 \theta _{x_A}&		\theta _{y_A}&		\theta _{z_A}\\
+		 \end{matrix} \right] \cdot \left[ \begin{matrix}
+		 c_{xx_A}&		c_{xy_A}&		c_{xz_A}\\
+		 0&		c_{yy_A}&		c_{yz_A}\\
+		 0&		0&		c_{zz_A}\\
+		 \end{matrix} \right] \cdot \left[ \begin{array}{c}
+		 \theta _{x_A}\\
+		 \theta _{y_A}\\
+		 \theta _{z_A}\\
+		 \end{array} \right] 
+		\end{equation}
+		\end{tiny}
+	\end{block}
 
-\begin{itemize}
-\tightlist
-\item
-  So we use instead \(\hat{r}(t) = r(t) / \pi^t_{a}\) if we trusted
-  algorithm \(\mathcal{A}_a\)
-\item
-  This way
-\end{itemize}
+	\begin{block}{Interpretation}
+		$\mathbf{R}_{S F}^{I C R F}$  is the transformation matrix from SF into ICRF; $\theta _{x_A}$ is the roll angle for GRACE-FO C.
+	\end{block}
+\end{frame}
 
-\[\mathbb{E}[\hat{r}(t)] = \sum\limits_{a=1}^N \mathbb{P}(a^t = a) \mathbb{E}[r(t) / \pi^t_{a}]\]
-\[= \mathbb{E}[r(t)] \sum\limits_{a=1}^N \frac{\mathbb{P}(a^t = a)}{\pi^t_{a}} = \mathbb{E}[r(t)]
-\]
+\begin{frame}{Transformation matrix}
+	According to Vilali and spiceypy, 
+	\begin{block}{The matrix rotating from SF into ICRF is related to the quaternions by:}
+		\begin{tiny}
+		\begin{equation}
+			\mathbf{R}_{S F}^{I C R F}=\left[\begin{array}{ccc}
+			q_{0}^{2}+q_{1}^{2}-q_{2}^{2}-q_{3}^{2} & 2\left(q_{1} q_{2}-q_{0} q_{3}\right) & 2\left(q_{1} q_{3}+q_{0} q_{2}\right) \\
+			2\left(q_{1} q_{2}+q_{0} q_{3}\right) & q_{0}^{2}-q_{1}^{2}+q_{2}^{2}-q_{3}^{2} & 2\left(q_{2} q_{3}-q_{0} q_{1}\right) \\
+			2\left(q_{1} q_{3}-q_{0} q_{2}\right) & 2\left(q_{2} q_{3}+q_{0} q_{1}\right) & q_{0}^{2}-q_{1}^{2}-q_{2}^{2}+q_{3}^{2}
+			\end{array}\right]
+		\end{equation}
+		\end{tiny}
+	\end{block}
 
-\end{block}
-
+	\begin{block}{The matrix rotating from ICRF into LOSF is derived from the orbital positions:}
+		\begin{tiny}
+			\begin{equation}
+			\mathbf{R}_{I C R F}^{L O S F}=\left[\boldsymbol{x}_{L O S F}, \boldsymbol{y}_{L O S F} , \boldsymbol{z}_{L O S F}\right]
+			\end{equation}
+			\begin{equation}
+				\theta_{x}=\arctan (\frac{R_{32}}{R_{33}});
+				\theta_{y}=-\arcsin (R_{31});
+				\theta_{z}=\arctan (\frac{R_{21}}{R_{11}})
+			\end{equation}
+			\begin{equation}
+				\boldsymbol{x}_{L O S F_{A}}=\frac{\boldsymbol{r}_{B}-\boldsymbol{r}_{A}}{\left|\boldsymbol{r}_{B}-\boldsymbol{r}_{A}\right|};
+				\boldsymbol{y}_{L O S F_{A}}=\frac{\boldsymbol{x}_{L O S F_{A}} \times \boldsymbol{r}_{A}}{\left|\boldsymbol{x}_{L O S F_{A}} \times \boldsymbol{r}_{A}\right|};
+				z_{L O S F_{A}}=\boldsymbol{x}_{L O S F_{A}} \times \boldsymbol{y}_{L O S F_{A}}
+			\end{equation}
+		\end{tiny}
+	\end{block}
 \end{frame}
 
 
-
-\subsection{\hfill{}4.3. Our Aggregator algorithm\hfill{}}
-
-\begin{block}{4.3 Our \emph{Aggregator} aggregation algorithm}
-
-Improves on \emph{Exp4} by the following ideas:
-
-\begin{itemize}
-\item
-  First let each algorithm vote for its decision \(A_1^t,\ldots,A_N^t\)
-\item
-  Choose arm
-  \(A_{\text{aggr}}(t) \sim p_j^{t+1} := \sum\limits_{a=1}^N \pi_a^t \mathbf{1}(A_a^t = j)\)
-\item
-  Update trust for each of the trusted algorithm, not only one
-  (\emph{i.e.}, if \(A_a^t = A_{\text{aggr}}^t\)) \(\hookrightarrow\)
-  faster convergence
-\item
-  Give feedback of reward \(r(t)\) to \emph{each} algorithm! (and not
-  only the one trusted at time \(t\)) \(\hookrightarrow\) each algorithm
-  have more data to learn from
-\end{itemize}
-
-\end{block}
-
+\begin{frame}{Bad news $\dots$}
+	\begin{figure}
+		\includegraphics[height=0.5\textheight]{..//images//attitude_angle_2019_01_01.png}
+	\end{figure}
+	\begin{block}{Big difference}
+		The yaw attitude angle is completely different.
+		
+		Tried several rotating method, it is the one that is most correct.
+		
+		Still don't know how to fix it.
+	\end{block}
 \end{frame}
 
 
-
-\section{\hfill{}5. Some illustrations\hfill{}}
-
+\section{\hfill{}2. Arrangement for next week\hfill{}}
+\subsection{\hfill{}2.1. Finish the laser ranging model and error propagation\hfill{}}
+\begin{frame}{LRI noise model}
+	\begin{block}{Obstacles}
+		\begin{itemize}
+			\item The attitude angle
+		\end{itemize}
+	\end{block}
+	\begin{block}{Wish to accomplish}
+		\begin{itemize}
+			\item Model of LRI noise model
+			\item Error propagation of LRI
+			\item Plotting all diagrams
+		\end{itemize}
+	\end{block}
+	\begin{block}{Tools}
+		\begin{itemize}
+			\item Astropy
+			\item Spiceypy
+		\end{itemize}
+	\end{block}
 \end{frame}
 
-\begin{frame}{5. Some illustrations}
-
-\begin{itemize}
-\tightlist
-\item
-  Artificial simulations of stochastic bandit problems
-\item
-  Bernoulli bandits but not only
-\item
-  Pool of different algorithms (UCB, Thompson Sampling etc)
-\item
-  Compared with other state-of-the-art algorithms for \emph{expert
-  aggregation} (Exp4, CORRAL, LearnExp)
-\item
-  What is plotted it the \emph{regret} for problem of means
-  \(\mu_1,\ldots,\mu_K\) :
-  \[ R_T^{\mu}(\mathcal{A}) = \max_k (T \mu_k) - \sum_{t=1}^T \mathbb{E}[r(t)] \]
-\item
-  Regret is known to be lower-bounded by \(C(\mu) \log(T)\)
-\item
-  and upper-bounded by \(C'(\mu) \log(T)\) for efficient algorithms
-\end{itemize}
-
+\subsection{\hfill{}2.2. Revise all the fortran program into module-style\hfill{}}
+\begin{frame}{Module Style}
+	\begin{block}{Problems met}
+		Hard to manage hundreds even thousands of variables and dozens of subtoutines
+		
+		Printing report seems to be a problem
+	\end{block}
+	\begin{block}{Advantages}
+		\begin{itemize}
+			\item Better encapsulation
+			\item Objective-oriented
+			\item More easy to manage variables and subroutines
+		\end{itemize}
+	\end{block}
 \end{frame}
 
+\section{Thanks!}
 
 
-\subsection{\hfill{}5.1. On a simple Bernoulli problem\hfill{}}
-
-\end{frame}
-
-\begin{frame}{On a simple Bernoulli problem}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics{plots/main_semilogy____env1-4_932221613383548446.png}
-\caption{bg original 105\%}
-\end{figure}
-
-\end{frame}
-
-
-
-\subsection{\hfill{}5.2. On a "hard" Bernoulli problem\hfill{}}
-
-\end{frame}
-
-\begin{frame}{On a ``hard'' Bernoulli problem}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics{plots/main____env2-4_932221613383548446.png}
-\caption{bg original 105\%}
-\end{figure}
-
-\end{frame}
-
-
-
-\subsection{\hfill{}5.3. On a mixed problem\hfill{}}
-
-\end{frame}
-
-\begin{frame}{On a mixed problem}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics{plots/main_semilogy____env4-4_932221613383548446.png}
-\caption{bg original 105\%}
-\end{figure}
-
-\end{frame}
-
-
-
-\section{\hfill{}6. Conclusion\hfill{}}
-
-\subsection{\hfill{}6.1. Summary\hfill{}}
-
-\end{frame}
-
-\begin{frame}{Conclusion (1/2)}
-
-\begin{itemize}
-\tightlist
-\item
-  Online learning can be a powerful tool for Cognitive Radio, and many
-  other real-world applications
-\item
-  Many formulation exist, a simple one is the Multi-Armed Bandit
-\item
-  Many algorithms exist, to tackle different situations
-\item
-  It's hard to know before hand which algorithm is efficient for a
-  certain problem\ldots{}
-\item
-  Online learning can also be used to select \emph{on the run} which
-  algorithm to prefer, for a specific situation!
-\end{itemize}
-
-\end{frame}
-
-
-
-\subsection{\hfill{}6.2. Summary \& Thanks\hfill{}}
-
-\end{frame}
-
-\begin{frame}{Conclusion (2/2)}
-
-\begin{itemize}
-\tightlist
-\item
-  Our algorithm \textbf{Aggregator} is efficient and easy to implement
-\item
-  For \(N\) algorithms \(\mathcal{A}_1,\ldots,\mathcal{A}_N\), it costs
-  \(\mathcal{O}(N)\) memory, and \(\mathcal{O}(N)\) extra computation
-  time at each time step
-\item
-  For stochastic bandit problem, it outperforms empirically the other
-  state-of-the-arts (Exp4, CORRAL, LearnExp).
-\end{itemize}
-
-\begin{block}{See our paper}
-
-\href{https://hal.inria.fr/hal-01705292}{\texttt{HAL.Inria.fr/hal-01705292}}
-
-\end{block}
-
-\begin{block}{See our code for experimenting with bandit algorithms}
-
-Python library, open source at
-\href{https://SMPyBandits.GitHub.io}{\texttt{SMPyBandits.GitHub.io}}
-
-\end{block}
-
-\begin{block}{\textbf{Thanks for listening!}}
-
-\end{block}
-
+\begin{frame}
+	\centering
+	
+	\begin{spacing}{2}
+	\begin{Huge}
+		Thanks for listening!\\
+	\end{Huge}
+	\end{spacing}
+	\begin{spacing}{3}
+		
+	\end{spacing}
+	\textbf{Hao-si Li}\\
+	Sichuan - 27th March 2020\\
+		
+	\includegraphics[height=0.16\textheight]{../common/logo_chd.png}
+	\includegraphics[height=0.16\textheight, width=0.6\linewidth]{../common/log_tiji.jpg}
+		
 \end{frame}
 
 \end{document}

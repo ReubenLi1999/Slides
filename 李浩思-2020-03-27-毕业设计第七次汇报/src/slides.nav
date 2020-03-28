@@ -1,97 +1,80 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\beamer@sectionpages {1}{1}}
 \headcommand {\beamer@subsectionpages {1}{1}}
-\headcommand {\sectionentry {1}{\hfill {}CentraleSup\IeC {\'e}lec Rennes \& Inria Lille\hfill {}}{2}{\hfill {}CentraleSup\IeC {\'e}lec Rennes \& Inria Lille\hfill {}}{0}}
-\headcommand {\beamer@subsectionpages {2}{1}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{\hfill {}Team {:} SCEE @ IETR \& SequeL @ CRIStAL\hfill {}}}
-\headcommand {\beamer@sectionpages {2}{1}}
-\headcommand {\beamer@subsectionpages {2}{1}}
-\headcommand {\sectionentry {2}{\hfill {}0. Introduction and motivation\hfill {}}{2}{\hfill {}0. Introduction and motivation\hfill {}}{0}}
-\headcommand {\beamer@subsectionpages {2}{1}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{2}{\hfill {}0.1. Title\hfill {}}}
-\headcommand {\beamer@subsectionpages {2}{1}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{2}{\hfill {}0.2. Objective\hfill {}}}
-\headcommand {\slideentry {2}{2}{1}{2/2}{\hfill {}0.2. Objective\hfill {}}{0}}
+\headcommand {\beamer@subsectionentry {0}{0}{1}{2}{\hfill {}0. Outline\hfill {}}}
+\headcommand {\slideentry {0}{1}{1}{2/2}{\hfill {}0. Outline\hfill {}}{0}}
 \headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {2}{2}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{3}{\hfill {}0.3. Outline\hfill {}}}
-\headcommand {\slideentry {2}{3}{1}{3/3}{\hfill {}0.3. Outline\hfill {}}{0}}
+\headcommand {\sectionentry {1}{\hfill {}1. Work of last week\hfill {}}{3}{\hfill {}1. Work of last week\hfill {}}{0}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{\hfill {}1.1. Research on the laser frame for GRACE-FO\hfill {}}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{\hfill {}1.1. Research on the laser frame for GRACE-FO\hfill {}}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@sectionpages {2}{3}}
-\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\sectionentry {3}{\hfill {}1. Opportunistic Spectrum Access\hfill {}}{4}{\hfill {}1. Opportunistic Spectrum Access\hfill {}}{0}}
-\headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{4}{\hfill {}1.1. OSA\hfill {}}}
-\headcommand {\slideentry {3}{1}{1}{4/4}{\hfill {}1.1. OSA\hfill {}}{0}}
+\headcommand {\slideentry {1}{1}{2}{4/4}{\hfill {}1.1. Research on the laser frame for GRACE-FO\hfill {}}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{5}{\hfill {}1.2. Model\hfill {}}}
-\headcommand {\slideentry {3}{2}{1}{5/5}{\hfill {}1.2. Model\hfill {}}{0}}
+\headcommand {\slideentry {1}{1}{3}{5/5}{\hfill {}1.1. Research on the laser frame for GRACE-FO\hfill {}}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@sectionpages {4}{5}}
-\headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\sectionentry {4}{\hfill {}2. Multi-Armed Bandits\hfill {}}{6}{\hfill {}2. Multi-Armed Bandits\hfill {}}{0}}
-\headcommand {\slideentry {4}{0}{1}{6/6}{}{0}}
+\headcommand {\slideentry {1}{1}{4}{6/6}{\hfill {}1.1. Research on the laser frame for GRACE-FO\hfill {}}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {6}{6}}
-\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\sectionentry {5}{\hfill {}3. MAB algorithms\hfill {}}{7}{\hfill {}3. MAB algorithms\hfill {}}{0}}
-\headcommand {\slideentry {5}{0}{1}{7/7}{}{0}}
+\headcommand {\slideentry {1}{1}{5}{7/7}{\hfill {}1.1. Research on the laser frame for GRACE-FO\hfill {}}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{8}{\hfill {}3.1. Index based algorithms\hfill {}}}
-\headcommand {\slideentry {5}{1}{1}{8/8}{\hfill {}3.1. Index based algorithms\hfill {}}{0}}
+\headcommand {\slideentry {1}{1}{6}{8/8}{\hfill {}1.1. Research on the laser frame for GRACE-FO\hfill {}}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{5}{2}{9}{\hfill {}3.2. UCB algorithm \hfill {}}}
-\headcommand {\slideentry {5}{2}{1}{9/9}{\hfill {}3.2. UCB algorithm \hfill {}}{0}}
+\headcommand {\beamer@subsectionpages {3}{8}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{\hfill {}1.2. Organise GRACE-FO 1B data \hfill {}}}
+\headcommand {\slideentry {1}{2}{1}{9/9}{\hfill {}1.2. Organise GRACE-FO 1B data \hfill {}}{0}}
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{5}{3}{10}{\hfill {}3.3. Thompson sampling algorithm \hfill {}}}
-\headcommand {\slideentry {5}{3}{1}{10/10}{\hfill {}3.3. Thompson sampling algorithm \hfill {}}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{10}{\hfill {}1.3. KBR error propagation \hfill {}}}
+\headcommand {\slideentry {1}{3}{1}{10/10}{\hfill {}1.3. KBR error propagation \hfill {}}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@sectionpages {7}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\sectionentry {6}{\hfill {}4. Aggregation of MAB algorithms\hfill {}}{11}{\hfill {}4. Aggregation of MAB algorithms\hfill {}}{0}}
-\headcommand {\slideentry {6}{0}{1}{11/11}{}{0}}
+\headcommand {\slideentry {1}{3}{2}{11/11}{\hfill {}1.3. KBR error propagation \hfill {}}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{6}{1}{12}{\hfill {}4.2. The Exp4 algorithm\hfill {}}}
-\headcommand {\beamer@subsectionpages {12}{11}}
-\headcommand {\beamer@subsectionentry {0}{6}{2}{12}{\hfill {}Unbiased estimates?\hfill {}}}
-\headcommand {\beamer@subsectionpages {12}{11}}
-\headcommand {\beamer@subsectionentry {0}{6}{3}{12}{\hfill {}4.3. Our Aggregator algorithm\hfill {}}}
-\headcommand {\beamer@sectionpages {11}{11}}
-\headcommand {\beamer@subsectionpages {12}{11}}
-\headcommand {\sectionentry {7}{\hfill {}5. Some illustrations\hfill {}}{12}{\hfill {}5. Some illustrations\hfill {}}{0}}
-\headcommand {\slideentry {7}{0}{1}{12/12}{}{0}}
+\headcommand {\slideentry {1}{3}{3}{12/12}{\hfill {}1.3. KBR error propagation \hfill {}}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{7}{1}{13}{\hfill {}5.1. On a simple Bernoulli problem\hfill {}}}
-\headcommand {\slideentry {7}{1}{1}{13/13}{\hfill {}5.1. On a simple Bernoulli problem\hfill {}}{0}}
+\headcommand {\slideentry {1}{3}{4}{13/13}{\hfill {}1.3. KBR error propagation \hfill {}}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{7}{2}{14}{\hfill {}5.2. On a "hard" Bernoulli problem\hfill {}}}
-\headcommand {\slideentry {7}{2}{1}{14/14}{\hfill {}5.2. On a "hard" Bernoulli problem\hfill {}}{0}}
+\headcommand {\slideentry {1}{3}{5}{14/14}{\hfill {}1.3. KBR error propagation \hfill {}}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\beamer@subsectionentry {0}{7}{3}{15}{\hfill {}5.3. On a mixed problem\hfill {}}}
-\headcommand {\slideentry {7}{3}{1}{15/15}{\hfill {}5.3. On a mixed problem\hfill {}}{0}}
+\headcommand {\slideentry {1}{3}{6}{15/15}{\hfill {}1.3. KBR error propagation \hfill {}}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@sectionpages {12}{15}}
-\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\sectionentry {8}{\hfill {}6. Conclusion\hfill {}}{16}{\hfill {}6. Conclusion\hfill {}}{0}}
-\headcommand {\beamer@subsectionpages {16}{15}}
-\headcommand {\beamer@subsectionentry {0}{8}{1}{16}{\hfill {}6.1. Summary\hfill {}}}
-\headcommand {\slideentry {8}{1}{1}{16/16}{\hfill {}6.1. Summary\hfill {}}{0}}
+\headcommand {\slideentry {1}{3}{7}{16/16}{\hfill {}1.3. KBR error propagation \hfill {}}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\beamer@subsectionentry {0}{8}{2}{17}{\hfill {}6.2. Summary \& Thanks\hfill {}}}
-\headcommand {\slideentry {8}{2}{1}{17/17}{\hfill {}6.2. Summary \& Thanks\hfill {}}{0}}
+\headcommand {\beamer@subsectionpages {10}{16}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{17}{\hfill {}1.4. Laser frequency noise model \hfill {}}}
+\headcommand {\slideentry {1}{4}{1}{17/17}{\hfill {}1.4. Laser frequency noise model \hfill {}}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@partpages {1}{17}}
-\headcommand {\beamer@subsectionpages {17}{17}}
-\headcommand {\beamer@sectionpages {16}{17}}
-\headcommand {\beamer@documentpages {17}}
-\headcommand {\gdef \inserttotalframenumber {17}}
+\headcommand {\slideentry {1}{4}{2}{18/18}{\hfill {}1.4. Laser frequency noise model \hfill {}}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {1}{4}{3}{19/19}{\hfill {}1.4. Laser frequency noise model \hfill {}}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@subsectionpages {17}{19}}
+\headcommand {\beamer@subsectionentry {0}{1}{5}{20}{\hfill {}1.5. Satellite's attitude in SRF \hfill {}}}
+\headcommand {\slideentry {1}{5}{1}{20/20}{\hfill {}1.5. Satellite's attitude in SRF \hfill {}}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {1}{5}{2}{21/21}{\hfill {}1.5. Satellite's attitude in SRF \hfill {}}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {1}{5}{3}{22/22}{\hfill {}1.5. Satellite's attitude in SRF \hfill {}}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@sectionpages {3}{22}}
+\headcommand {\beamer@subsectionpages {20}{22}}
+\headcommand {\sectionentry {2}{\hfill {}2. Arrangement for next week\hfill {}}{23}{\hfill {}2. Arrangement for next week\hfill {}}{0}}
+\headcommand {\beamer@subsectionpages {23}{22}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{23}{\hfill {}2.1. Finish the laser ranging model and error propagation\hfill {}}}
+\headcommand {\slideentry {2}{1}{1}{23/23}{\hfill {}2.1. Finish the laser ranging model and error propagation\hfill {}}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{24}{\hfill {}2.2. Revise all the fortran program into module-style\hfill {}}}
+\headcommand {\slideentry {2}{2}{1}{24/24}{\hfill {}2.2. Revise all the fortran program into module-style\hfill {}}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@sectionpages {23}{24}}
+\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\sectionentry {3}{Thanks!}{25}{Thanks!}{0}}
+\headcommand {\slideentry {3}{0}{1}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@partpages {1}{25}}
+\headcommand {\beamer@subsectionpages {25}{25}}
+\headcommand {\beamer@sectionpages {25}{25}}
+\headcommand {\beamer@documentpages {25}}
+\headcommand {\gdef \inserttotalframenumber {25}}
